@@ -6,8 +6,8 @@ while True:
     level=int(input("Enter the length of the word you would like to guess(4-10)or press 0 for quit: "))
         
     if level==0:
-        print(f"no of matches won{win}")
-        print(f"no of matches lose{lose}")
+        print(f"no of matches won {win}")
+        print(f"no of matches lose {lose}")
         break
     with open("words.txt", "r",) as file:
         words = [line.strip() for line in file if line.strip()]
